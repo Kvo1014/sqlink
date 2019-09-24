@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1562003925 source:/home/home/Desktop/c program/app1/main.cpp
+	"stdfix.h"
+	<iostream>
+
