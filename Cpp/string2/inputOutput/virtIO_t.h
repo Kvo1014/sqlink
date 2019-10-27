@@ -1,5 +1,3 @@
-#ifndef VIRTIO_H
-#define VIRTIO_H
 #pragma once
 #include <string>
 #include <iostream>
@@ -8,7 +6,7 @@
 
 using namespace std;
 
-class virtIO_t
+class VirtIO_t
 {
     protected:
 
@@ -16,12 +14,12 @@ class virtIO_t
     private:
         string filePath;
         string fileMode;
-        virtIO_t(const virtIO_t& v);
+        VirtIO_t(const VirtIO_t& v);
 
     public:
-        virtual ~virtIO_t();
-        virtIO_t();
-        virtIO_t(string filePath, string fileMode);
+        virtual ~VirtIO_t();
+        VirtIO_t();
+        VirtIO_t(string filePath, string fileMode);
 
         const string GetFilePath() const
         {
@@ -32,26 +30,26 @@ class virtIO_t
             return fileMode;
         }
 
-        virtual virtIO_t& operator << (char  val) = 0;
-        virtual virtIO_t& operator >> (char& val) = 0;
-        virtual virtIO_t& operator << (float  val) = 0;
-        virtual virtIO_t& operator >> (float& val) = 0;
-        virtual virtIO_t& operator << (int  val) = 0;
-        virtual virtIO_t& operator >> (int& val) = 0;
-        virtual virtIO_t& operator << (short  val) = 0;
-        virtual virtIO_t& operator >> (short& val) = 0;
-        virtual virtIO_t& operator << (long  val) = 0;
-        virtual virtIO_t& operator >> (long& val) = 0;
-        virtual virtIO_t& operator << (unsigned char  val) = 0;
-        virtual virtIO_t& operator >> (unsigned char& val) = 0;
-        virtual virtIO_t& operator << (double  val) = 0;
-        virtual virtIO_t& operator >> (double& val) = 0;
-        virtual virtIO_t& operator << (unsigned int  val) = 0;
-        virtual virtIO_t& operator >> (unsigned int& val) = 0;
-        virtual virtIO_t& operator << (unsigned short  val) = 0;
-        virtual virtIO_t& operator >> (unsigned short& val) = 0;
-        virtual virtIO_t& operator << (unsigned long  val) = 0;
-        virtual virtIO_t& operator >> (unsigned long& val) = 0;
+        virtual VirtIO_t& operator << (char  val) = 0;
+        virtual VirtIO_t& operator >> (char& val) = 0;
+        virtual VirtIO_t& operator << (float  val) = 0;
+        virtual VirtIO_t& operator >> (float& val) = 0;
+        virtual VirtIO_t& operator << (int  val) = 0;
+        virtual VirtIO_t& operator >> (int& val) = 0;
+        virtual VirtIO_t& operator << (short  val) = 0;
+        virtual VirtIO_t& operator >> (short& val) = 0;
+        virtual VirtIO_t& operator << (long  val) = 0;
+        virtual VirtIO_t& operator >> (long& val) = 0;
+        virtual VirtIO_t& operator << (unsigned char  val) = 0;
+        virtual VirtIO_t& operator >> (unsigned char& val) = 0;
+        virtual VirtIO_t& operator << (double  val) = 0;
+        virtual VirtIO_t& operator >> (double& val) = 0;
+        virtual VirtIO_t& operator << (unsigned int  val) = 0;
+        virtual VirtIO_t& operator >> (unsigned int& val) = 0;
+        virtual VirtIO_t& operator << (unsigned short  val) = 0;
+        virtual VirtIO_t& operator >> (unsigned short& val) = 0;
+        virtual VirtIO_t& operator << (unsigned long  val) = 0;
+        virtual VirtIO_t& operator >> (unsigned long& val) = 0;
 };
 
-#endif
+
